@@ -8,7 +8,7 @@ st.set_page_config(page_title="Hüttentool")
 with open("styles.css") as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-excel_sheet_gaeste_new = "/Users/johannesglock/Library/Mobile Documents/com~apple~CloudDocs/getraenke.xlsm"
+excel_sheet_gaeste_new = "getraenke.xlsm"
 df_gaeste = pd.read_excel(excel_sheet_gaeste_new, sheet_name="Tabelle1", usecols="B:O", header=1, nrows=20)
 
 st.title("Getränkeabrechnung")
