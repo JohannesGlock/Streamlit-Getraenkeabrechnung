@@ -133,7 +133,7 @@ with st.form(key="my_form", clear_on_submit=True):
 
     if button:
         with st.spinner('Wait for it...'):
-            wb.save("/Users/johannesglock/Library/Mobile Documents/com~apple~CloudDocs/getraenke.xlsm")
+            wb.save("getraenke.xlsm")
             st.success('Done!')
 
 
